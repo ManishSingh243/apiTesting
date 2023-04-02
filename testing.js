@@ -20,6 +20,11 @@ function addUser(e){
         console.log(err)
     })
 
+    axios.put("https://crudcrud.com/api/4add3c30cda44bd8a6e570f993c4bc65/appointmentData/${_id}",{
+        name : userName
+    }).then(res => console.log(res))
+    .catch(err => console.log(err))
+
 window.addEventListener('DOMContentLoaded',()=>{
     axios.get("https://crudcrud.com/api/4add3c30cda44bd8a6e570f993c4bc65/appointmentData")
     .then((res) => {
